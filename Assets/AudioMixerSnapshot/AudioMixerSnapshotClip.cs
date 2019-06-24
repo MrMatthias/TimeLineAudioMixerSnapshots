@@ -12,7 +12,7 @@ public class AudioMixerSnapshotClip : PlayableAsset, ITimelineClipAsset
 
     public ClipCaps clipCaps
     {
-        get { return ClipCaps.ClipIn | ClipCaps.SpeedMultiplier | ClipCaps.Blending; }
+        get { return ClipCaps.ClipIn | ClipCaps.SpeedMultiplier | ClipCaps.Blending | ClipCaps.Extrapolation; }
     }
 
     public override Playable CreatePlayable (PlayableGraph graph, GameObject owner)
